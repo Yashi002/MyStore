@@ -2,9 +2,91 @@
 <head>
   <meta charset = "UTF-8">
   <title>MyStore | Ecommerce website</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <div class="header">
+    <div class="hero">
+      <div class="form-box">
+        <div class="button-box">
+          <div id="btn"></div>
+          <button type="button" class="toggle-btn" onclick="login()">Log In</button>
+          <button type="button" class="toggle-btn" onclick="register()">Register</button>
+        </div>
+        <form id="login" class="input-group">
+          <input type="text" class="input-field" placeholder="User ID" required>
+          <input type="text" class="input-field" placeholder="Enter Password" required>
+          <input type="checkbox" class="check-box"><span>Remember Password</span>
+          <button type="submit" class="submit-btn">Login</button>
+        </form>
+        <form id="register" class="input-group">
+          <input type="text" class="input-field" placeholder="User ID" required>
+          <input type="emailid" class="input-field" placeholder="Email ID" required>
+          <input type="text" class="input-field" placeholder="Enter Password" required>
+          <input type="checkbox" class="check-box"><span>Agree to terms & conditions.</span>
+          <button type="submit" class="submit-btn">Register</button>
+        </form>
+      </div>
+
+    </div>
+
+
+  <div class="container">
+  <div class="navbar">
+    <div class="logo">
+      <img src="https://wallpaperaccess.com/full/427852.jpg">
+    </div>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="">Home</a></li>
+        <li><a href="">About</a></li>
+        <li><a href="">Contact</a></li>
+      </ul>
+    </nav>
+    <img src="" width="30px" height="30px"
+
+  <div class="row">
+    <div class="col-2">
+      <h1>Let's make a change!</h1>
+      <p>Because plants are life</p>
+      <a href="" class="btn">Take tour &#8594;</a>
+    </div>
+    <div class="col-2">
+      <img src="https://media.architecturaldigest.com/photos/5dcde01c9f913a0008d4539a/master/w_1600%2Cc_limit/Osofsky_Oct19-62.jpg" >
+
+    </div>
+  </div>
+</div>
+</div>
+
+
+ <div class="categories">
+   <div class="row">
+     <div class="col-2">
+       <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/yucca-cane-plant-in-a-pot-on-a-white-background-royalty-free-image-1580856558.jpg?crop=0.91771xw:1xh;center,top&resize=480:*">
+     </div>
+     <div class="col-2">
+       <img src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F37%2F2020%2F02%2Ffive-snake-plants-b43d5e13.jpg&q=85">
+     </div>
+
+   </div>
+   <script>
+   var x = document.getElementById("login");
+   var y = document.getElementById("register");
+   var z = document.getElementById("btn");
+   function register(){
+     x.style.left = "-400px";
+     y.style.left = "50px";
+     z.style.left = "110px";
+   }
+   function login(){
+     x.style.left = "50px";
+     y.style.left = "450px";
+     z.style.left = "0px"; 
+   }
+
+   </script>
+
 </body>
-
-
 </html>
